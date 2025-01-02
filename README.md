@@ -20,6 +20,10 @@
   ## Design
 
     To keep track of books I enjoy.
+![alt text](assets/main_page.png)
+![alt text](assets/search_notLogin.png)
+![alt text](assets/login.png)![alt text](assets/signup.png)
+
 
   ## Install
 
