@@ -2,7 +2,7 @@
 import ReactDOM from 'react-dom/client';
 import { ApolloProvider, InMemoryCache, ApolloClient } from '@apollo/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import App from './App';  // Your root app component
+import App from './app';  // Your root app component
 import SearchBooks from './pages/SearchBooks';  // Your SearchBooks component
 import SavedBooks from './pages/SavedBooks';  // Your SavedBooks component
 import './app.css';  // Your global styles if needed
