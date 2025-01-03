@@ -7,7 +7,7 @@ const uri = process.env.MONGODB_URI || `mongodb+srv://${username}:${password}@cl
 //mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/googlebooks');
 console.log("URI: ", uri);
 
-mongoose.connect('mongodb+srv://admin:QHlMyBRENwcRpN0a@cluster0.airdz.mongodb.net/', {
+mongoose.connect('mongodb+srv://admin:<pswd>@cluster0.airdz.mongodb.net/', {
 //  useNewUrlParser: true,
 //  useUnifiedTopology: true,
 });
