@@ -1,6 +1,6 @@
 //import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { ApolloProvider, InMemoryCache, ApolloClient } from '@apollo/client';
+import { ApolloProvider, InMemoryCache, ApolloClient, createHttpLink } from '@apollo/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './app.jsx';  // Your root app component
 import SearchBooks from './pages/SearchBooks';  // Your SearchBooks component
@@ -8,10 +8,15 @@ import SavedBooks from './pages/SavedBooks';  // Your SavedBooks componentgit
 import './app.css';  // Your global styles if needed
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+
+const httpLink = createHttpLink({
+  uri: '/graphql',
+});
 // Apollo Client setup
 const client = new ApolloClient({
-  uri: 'mongodb+srv://admin:{process.env.password}@cluster0.airdz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',  
+ // uri: 'mongodb+srv://admin:{process.env.password}@cluster0.airdz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',  
  // uri: process.env.REACT_APP_MONGODB_URI,
+  link: httpLink,
   cache: new InMemoryCache(),
 });
 

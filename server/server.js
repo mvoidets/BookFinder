@@ -29,6 +29,7 @@ if (process.env.NODE_ENV === 'production') {
 //app.use(routes);
 
 db.once('open', () => {
+  console.log('Database connected');
   app.listen(PORT, () => {
     console.log(`API server running on port ${PORT}!`);
     console.log(`Use GraphQL at http://localhost:${PORT}/graphql`);
