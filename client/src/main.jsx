@@ -10,7 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 // Apollo Client setup
 const client = new ApolloClient({
-  uri: 'mongodb+srv://dbUser:gzK8sfeDXgiqpkFc@cluster1.ptcdc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1',  
+  uri: 'mongodb+srv://admin:yZ3hmOX3nzURVoYx@cluster0.airdz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',  
   cache: new InMemoryCache(),
 });
 
