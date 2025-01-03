@@ -4,13 +4,13 @@ import { ApolloProvider, InMemoryCache, ApolloClient } from '@apollo/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './app';  // Your root app component
 import SearchBooks from './pages/SearchBooks';  // Your SearchBooks component
-import SavedBooks from './pages/SavedBooks';  // Your SavedBooks component
+import SavedBooks from './pages/SavedBooks';  // Your SavedBooks componentgit 
 import './app.css';  // Your global styles if needed
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 // Apollo Client setup
 const client = new ApolloClient({
-  uri: 'http://localhost:3001',  // Replace with your GraphQL server URL
+  uri: 'mongodb+srv://dbUser:gzK8sfeDXgiqpkFc@cluster1.ptcdc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1',  
   cache: new InMemoryCache(),
 });
 
